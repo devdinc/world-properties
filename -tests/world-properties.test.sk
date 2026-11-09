@@ -1,0 +1,3 @@
+test "missing world properties file is ignored":
+    load_world_properties_from_folder("__runtime_test_missing_world_properties__")
+    assert {-world.properties::__runtime_test_missing_world_properties__::border_size} is not set with "missing properties file should not create a border size"
